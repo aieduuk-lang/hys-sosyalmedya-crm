@@ -31,8 +31,8 @@ export default function LoginPage() {
       return;
     }
 
-    router.push('/');
-    router.refresh();
+    // Full page reload — middleware cookie'leri düzgün okuması için
+    window.location.href = '/';
   };
 
   return (
